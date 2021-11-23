@@ -27,6 +27,7 @@
     "qrcode-reader": "^1.0.4",
     "rxjs": "~6.6.0",
     "sweetalert2": "^11.2.0",
+    "tether": "^2.0.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
