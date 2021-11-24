@@ -1,0 +1,114 @@
+.login-page{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-image: url("../../../assets/images/Bg-02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    width: 90%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    height: 80vh;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.main::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    left: -2px;
+    top: 0;
+    overflow: hidden;
+}
+main::before{
+    content: "";
+    position: absolute;
+    background-image: url("../../../assets/images/Circle-02.961f382da6d8a308254a.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 10%;
+    height: 20%;
+    right: -15px;
+    top: -2px;
+    overflow: hidden;
+}
+.login-form{
+    margin: auto;
+    width: 100%;
+    margin-left: auto;
+}
+.logo{
+    margin: auto;
+    width: 50%;
+
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.title{
+    color: #403375;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h1{
+    font-family: "Open Sans",sans-serif!important;
+    font-size: 2.25rem;
+    font-family: Open Sans,sans-serif;
+    font-weight: 700;
+    line-height: 3rem;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+input{
+    background: 0 0!important;
+    color: #8f8c8c!important;
+    padding: 4px 0!important;
+    font-weight: 400;
+    font-size: 16px!important;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #bfbfbf!important;
+    width: 85%;
+    margin: auto;
+    letter-spacing: .8px;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;  
+    font-family: Poppins,sans-serif!important;
+    font-size: .8rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn{
+    border-radius: 8px;
+    background: #ff5722!important;
+    width: auto;
+    min-width: 150px;
+    margin: 70px auto auto;
+    height: 44px;
+    border: none;
+    padding: 5px 20px!important;
+    box-shadow: 0 5px 13px #cbcbcb;
+    -webkit-box-shadow: 0 5px 13px #cbcbcb;
+}

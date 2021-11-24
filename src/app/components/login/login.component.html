@@ -1,0 +1,66 @@
+<div class="login-page">
+  <div>
+    <div class="main">
+      <div class="login-form">
+        <div class="logo">
+          <img class="img-fluid" src="assets/images/prime_logo.png"
+          />
+        </div>
+        <h1 class="title" id="title">User Login</h1>
+        <!-- <img src="assets/images/Graphics-01-02.0aa76727a7333488fa6a.png" style="width: 60%;"/> -->
+        <!---->
+        <div >
+          <form
+            class="ng-pristine ng-invalid ng-touched"
+          >
+            <div class="form-group">
+              <input
+                *ngIf="!otpSend"
+                autocomplete="off"
+                class="form-control ng-pristine ng-invalid ng-touched"
+                id="input-mobile"
+                maxlength="10"
+                minlength="10"
+                name="mobile"
+                pattern="[0-9]+"
+                placeholder="Mobile Number"
+                required=""
+                type="tel"
+                [(ngModel)]="mobileNum"
+                [ngModelOptions]="{standalone: true}"
+                [readonly]="otpSend"
+              /><!---->
+              <input
+                *ngIf="otpSend"
+                autocomplete="off"
+                class="form-control"
+                name="mobile"
+                pattern="[0-9]+"
+                placeholder="Enter Otp"
+                required=""
+                type="tel"
+                [(ngModel)]="inputOtp"
+                [ngModelOptions]="{standalone: true}"
+              />
+            </div>
+            <button
+                *ngIf="!otpSend"
+                class="btn btn-primary btn-block custom-btn"
+                (click)="generateOtp()"
+            >
+              Generate OTP
+            </button>
+            <button
+                *ngIf="otpSend"
+                class="btn btn-primary btn-block custom-btn"
+                (click)="verifyOtp()"
+            >
+              Verify OTP
+            </button>
+          </form>
+        </div>
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
